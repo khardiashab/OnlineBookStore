@@ -1,0 +1,74 @@
+Online Book store  application
+
+In this applcation we do the 
+
+Features : 
+    Authentication : 
+        Login
+        Register
+        option : firebase, google oauth2.0
+    Book Search :
+        Search Books
+    Book Adding :(skip for now)
+    Cart : 
+        Add to cart
+        Remove from cart
+        View cart
+        Checkout
+    wishlist : 
+        Add to wishlist
+        Remove from wishlist
+
+        
+
+
+Technologies :
+    React.js, typescript,(javascript),
+    Spring Boot,
+    MongoDB, Mysql
+
+
+Entity :
+    User : {
+        id
+        name
+        email
+        cart [{
+            id
+        }]
+        wishlist:[{
+            id
+        }]
+    }
+    Book : {
+        id
+        name
+        author
+        price
+        description
+        image
+        category
+    }
+    cart : {
+        id
+        totalPrice
+        discount
+        totalItems
+        itemList[{
+
+            id
+            quantity
+            book{
+                id
+            }
+        }
+        ]
+    }
+
+    wishlist : [{
+        id
+        book{
+            id
+        }
+    }]
+
