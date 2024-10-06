@@ -1,5 +1,3 @@
----
-
 ### **How to Use a Git Project with Commands**
 
 ### 1. **Clone a Repository**
@@ -15,6 +13,7 @@ git clone https://github.com/username/project.git
 
 ### 2. **Navigate to the Project Directory**
 Go to the project folder.
+
 
 ```bash
 cd project
@@ -79,13 +78,13 @@ If you're on `main` or `master` branch:
 git pull origin main
 ```
 
----
 
 ### **Handling Git Conflicts**
 
 Conflicts happen when two people change the same file in different ways, and Git doesn't know which change to keep. Here's how to fix it:
 
 ### 1. **Pull the Latest Changes**
+
 Before you start working, always pull the latest changes to avoid conflicts later.
 
 ```bash
@@ -93,6 +92,7 @@ git pull origin <branch-name>
 ```
 
 ### 2. **Git Will Show a Conflict**
+
 When you pull or merge, Git will tell you if there’s a conflict. It looks like this:
 
 ```bash
@@ -100,6 +100,7 @@ CONFLICT (content): Merge conflict in <file-name>
 ```
 
 ### 3. **Open the Conflicted File**
+
 Go to the file with the conflict. You’ll see sections like this:
 
 ```plaintext
@@ -109,13 +110,16 @@ Your changes
 Their changes
 >>>>>>> branch-name
 ```
+
 - **`HEAD`**: This is your version.
 - **`branch-name`**: This is the version from the other branch.
 
 ### 4. **Resolve the Conflict**
+
 You need to decide whether to keep your changes, the other branch’s changes, or a combination of both. Edit the file and remove the conflict markers (`<<<<<<<`, `=======`, and `>>>>>>>`).
 
 ### 5. **Add and Commit the Resolved File**
+
 Once you’ve fixed the conflict, add and commit the resolved file:
 
 ```bash
@@ -127,6 +131,7 @@ git commit -m "Resolved conflict in <file-name>"
 ```
 
 ### 6. **Push the Changes**
+
 After resolving the conflict, push the changes to the remote repository.
 
 ```bash
@@ -164,5 +169,3 @@ git push origin <branch-name>
    Before pushing your changes, run tests to ensure everything works properly. This helps avoid conflicts with broken code.
 
 ---
-
-By following these steps and best practices, you can handle conflicts smoothly and avoid them in the first place!
