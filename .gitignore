@@ -1,0 +1,73 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs
+*.log
+logs/*
+
+# Environment variables
+.env
+
+# Java dependencies
+*.class
+# Eclipse
+.metadata/
+bin/
+tmp/
+*.war
+*.ear
+# Maven
+target/
+# IntelliJ IDEA
+*.iml
+.idea/
+*.ipr
+*.iws
+out/
+
+# React specific
+/build
+/public/static
+
+# Spring Boot specific
+# Ignore target directory and artifacts
+target/
+# Ignore Spring Boot application properties file (if contains sensitive info)
+application.properties
+application.yml
+# Ignore IDE-specific project files
+.vscode/
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# Spring Boot log files and temporary files
+*.log
+spring.log
+*.pid
+hs_err_pid*
+
+# MacOS files
+.DS_Store
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Optional coverage directory
+coverage/
+
+# Optional TypeScript cache
+*.tsbuildinfo
+
+# IDE and editor-specific files
+.vscode/
+*.swp
+*.swo
